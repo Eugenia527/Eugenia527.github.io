@@ -284,7 +284,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2026-03-11 16:44:26" itemprop="dateModified" datetime="2026-03-11T16:44:26+08:00">2026-03-11</time>
+      <time title="Modified: 2026-03-11 17:38:37" itemprop="dateModified" datetime="2026-03-11T17:38:37+08:00">2026-03-11</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -313,29 +313,29 @@
 </blockquote>
 <p>下载附件解压缩后得到一个后缀名为<code>.pcapng</code>的文件，使用<a target="_blank" rel="noopener" href="https://wiki.wireshark.org/">wireshark</a>打开</p>
 <p>传输文件看到了<a target="_blank" rel="noopener" href="https://www.runoob.com/np/ftp-protocol.html">ftp协议</a>，过滤一下</p>
-<p>![屏幕截图 2026-03-07 165329](<a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/Eugenia527/Eugenia527.github.io/main/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE">https://raw.githubusercontent.com/Eugenia527/Eugenia527.github.io/main/images/屏幕截图</a> 2026-03-07 165329.png)</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Eugenia527/images/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-03-07%20165329.png"></p>
 <p>右键选择追踪流可以发现使用ftp的<code>retr</code>命令下载了一个<code>flag.rar</code></p>
-<p><img src="https://raw.githubusercontent.com/Eugenia527/Eugenia527.github.io/main/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-03-07%20164030.png" alt="屏幕截图 2026-03-07 164030"></p>
+<p>![](<a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/Eugenia527/images/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE">https://cdn.jsdelivr.net/gh/Eugenia527/images/images/屏幕截图</a> 2026-03-07 164030.png)</p>
 <p>可以使用<a target="_blank" rel="noopener" href="https://www.kali.org/tools/foremost/">foremost</a>对文件进行分离</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">foremost 被偷走的文件.pcapng</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://raw.githubusercontent.com/Eugenia527/Eugenia527.github.io/main/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-03-07%20171510.png" alt="屏幕截图 2026-03-07 171510"></p>
+<p>![](<a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/Eugenia527/images/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE">https://cdn.jsdelivr.net/gh/Eugenia527/images/images/屏幕截图</a> 2026-03-07 171510.png)</p>
 <p>得到一个加密的rar压缩包文件</p>
-<p><img src="https://raw.githubusercontent.com/Eugenia527/Eugenia527.github.io/main/images/20260308215641997.png"></p>
+<p>![](<a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/Eugenia527/images/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE">https://cdn.jsdelivr.net/gh/Eugenia527/images/images/屏幕截图</a> 2026-03-08 215638.png)</p>
 <p>由于目前做的关于爆破的题目都是四位数字，猜测密码仍是四位数字，使用ARHCPR中进行掩码攻击</p>
-<p><img src="https://raw.githubusercontent.com/Eugenia527/Eugenia527.github.io/main/images/20260308221451821.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Eugenia527/images/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-03-08%20221450.png"></p>
 <p>最后成功恢复出口令<code>5790</code></p>
-<p><img src="https://raw.githubusercontent.com/Eugenia527/Eugenia527.github.io/main/images/20260308221649430.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Eugenia527/images/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-03-08%20221632.png"></p>
 <p>最后成功解出flag</p>
-<p><img src="https://raw.githubusercontent.com/Eugenia527/Eugenia527.github.io/main/images/20260308221818981.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Eugenia527/images/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-03-08%20221816.png"></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">FLAG: flag&#123;6fe99a5d03fb01f833ec3caa80358fa3&#125;</span><br></pre></td></tr></table></figure>
 
 <h2 id="2-BJDCTF2020-认真你就输"><a href="#2-BJDCTF2020-认真你就输" class="headerlink" title="2. [BJDCTF2020]认真你就输"></a>2. [BJDCTF2020]认真你就输</h2><p>下载附件解压缩后是一个excel表格，但是无法正常打开</p>
-<p><img src="https://raw.githubusercontent.com/Eugenia527/Eugenia527.github.io/main/images/20260308222022847.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Eugenia527/images/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-03-08%20222017.png"></p>
 <p>点击是后，查看文档内容</p>
-<p><img src="https://raw.githubusercontent.com/Eugenia527/Eugenia527.github.io/main/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-03-08%20223401.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Eugenia527/images/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-03-08%20222017.png"></p>
 <p>发现了PK文件头，和<code>flag.txt</code>文件，而且在第一行 <code>xl/charts/flag.txt</code> 标注了<code>flag</code>的位置，可见这是一个zip压缩文件夹，更改文件后缀名为<code>.zip</code></p>
-<p><img src="https://raw.githubusercontent.com/Eugenia527/Eugenia527.github.io/main/images/20260308233519680.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Eugenia527/images/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-03-08%20233515.png"></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">FLAG: flag&#123;M9eVfi2Pcs#&#125;</span><br></pre></td></tr></table></figure>
 
 <h2 id="3-被劫持的神秘礼物"><a href="#3-被劫持的神秘礼物" class="headerlink" title="3. 被劫持的神秘礼物"></a>3. 被劫持的神秘礼物</h2><p>题目描述</p>
@@ -343,44 +343,44 @@
 <p>某天小明收到了一件很特别的礼物，有奇怪的后缀，奇怪的名字和格式。小明找到了知心姐姐度娘，度娘好像知道这是啥，但是度娘也不知道里面是啥。。。你帮帮小明？找到帐号密码，串在一起，用32位小写MD5哈希一下得到的就是答案。 链接: <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1pwVVpA5_WWY8Og6dhCcWRw">https://pan.baidu.com/s/1pwVVpA5_WWY8Og6dhCcWRw</a> 提取码: 31vk 注意：得到的 flag 请包上 flag{} 提交</p>
 </blockquote>
 <p>下载附件后是一个<code>gift.pcapng</code>文件，选择追踪流，找到了帐号和密码，根据题目的要求串在一起</p>
-<p><img src="https://raw.githubusercontent.com/Eugenia527/Eugenia527.github.io/main/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-03-09%20200624.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Eugenia527/images/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-03-09%20200624.png"></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">adminaadminb</span><br></pre></td></tr></table></figure>
 
 <p>用32位小写MD5哈希一下，再包上flag{}即可</p>
-<p><img src="https://raw.githubusercontent.com/Eugenia527/Eugenia527.github.io/main/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-03-09%20201601.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Eugenia527/images/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-03-09%20200624.png"></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">FLAG: flag&#123;1d240aafe21a86afc11f38a45b541a49&#125;</span><br></pre></td></tr></table></figure>
 
 <h2 id="4-BJDCTF2020-藏藏藏"><a href="#4-BJDCTF2020-藏藏藏" class="headerlink" title="4. [BJDCTF2020]藏藏藏"></a>4. [BJDCTF2020]藏藏藏</h2><p>下载附件解压缩后得到一个<code>藏藏藏.jpg</code>和<code>题目及答案.txt</code>，然而打开题目及答案.txt后，并没有显示flag</p>
-<p><img src="https://raw.githubusercontent.com/Eugenia527/Eugenia527.github.io/main/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-03-09%20202151.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Eugenia527/images/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-03-09%20202151.png"></p>
 <p>一定有隐藏的信息在图片，将图片放入010 editor中进行查看，能够查找到PK文件头</p>
-<p><img src="https://raw.githubusercontent.com/Eugenia527/Eugenia527.github.io/main/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-03-11%20160556.png"></p>
+<p>![](<a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/Eugenia527/images/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE">https://cdn.jsdelivr.net/gh/Eugenia527/images/images/屏幕截图</a> 2026-03-11 160556.png)</p>
 <p>放入Kali中使用binwalk查看</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">binwalk 藏藏藏.jpg</span><br></pre></td></tr></table></figure>
 
-<p>![](<a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/Eugenia527/Eugenia527.github.io/main/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE">https://raw.githubusercontent.com/Eugenia527/Eugenia527.github.io/main/images/屏幕截图</a> 2026-03-11 155031.png)</p>
+<p>![](<a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/Eugenia527/images/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE">https://cdn.jsdelivr.net/gh/Eugenia527/images/images/屏幕截图</a> 2026-03-11 155031.png)</p>
 <p>再使用foremost进行分离</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">foremost 藏藏藏.jpg</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://raw.githubusercontent.com/Eugenia527/Eugenia527.github.io/main/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-03-11%20160009.png"></p>
+<p>![](<a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/Eugenia527/images/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE">https://cdn.jsdelivr.net/gh/Eugenia527/images/images/屏幕截图</a> 2026-03-11 160009.png)</p>
 <p>最终得到一张二维码</p>
-<p><img src="https://raw.githubusercontent.com/Eugenia527/Eugenia527.github.io/main/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-03-11%20160301.png"></p>
+<p>![](<a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/Eugenia527/images/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE">https://cdn.jsdelivr.net/gh/Eugenia527/images/images/屏幕截图</a> 2026-03-11 160301.png)</p>
 <p>扫描后即可得到flag</p>
-<p><img src="https://raw.githubusercontent.com/Eugenia527/Eugenia527.github.io/main/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-03-11%20160741.png"></p>
+<p>![](<a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/Eugenia527/images/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE">https://cdn.jsdelivr.net/gh/Eugenia527/images/images/屏幕截图</a> 2026-03-11 160741.png)</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">FLAG: flag&#123;you are the best!&#125;</span><br></pre></td></tr></table></figure>
 
 <h2 id="5-GXYCTF2019-佛系青年"><a href="#5-GXYCTF2019-佛系青年" class="headerlink" title="5. [GXYCTF2019]佛系青年"></a>5. [GXYCTF2019]佛系青年</h2><p>下载附件后得到一个压缩包，放入010 editor进行查看</p>
-<p><img src="https://raw.githubusercontent.com/Eugenia527/Eugenia527.github.io/main/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-03-11%20160949.png"></p>
+<p>![](<a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/Eugenia527/images/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE">https://cdn.jsdelivr.net/gh/Eugenia527/images/images/屏幕截图</a> 2026-03-11 160949.png)</p>
 <p>显然是一个伪加密</p>
-<p><img src="https://raw.githubusercontent.com/Eugenia527/Eugenia527.github.io/main/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-03-11%20161635.png"></p>
+<p>![](<a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/Eugenia527/images/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE">https://cdn.jsdelivr.net/gh/Eugenia527/images/images/屏幕截图</a> 2026-03-11 161635.png)</p>
 <p>修改后保存</p>
-<p>![](<a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/Eugenia527/Eugenia527.github.io/main/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE">https://raw.githubusercontent.com/Eugenia527/Eugenia527.github.io/main/images/屏幕截图</a> 2026-03-11 161838.png)</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Eugenia527/images/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-03-11%20161838.png"></p>
 <p>重新打开fo.txt，，看到最下方有一段文字</p>
-<p><img src="https://raw.githubusercontent.com/Eugenia527/Eugenia527.github.io/main/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-03-11%20161751.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Eugenia527/images/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-03-11%20161751.png"></p>
 <blockquote>
 <p>佛曰：遮等諳勝能礙皤藐哆娑梵迦侄羅哆迦梵者梵楞蘇涅侄室實真缽朋能。奢怛俱道怯都諳怖梵尼怯一罰心缽謹缽薩苦奢夢怯帝梵遠朋陀諳陀穆諳所呐知涅侄以薩怯想夷奢醯數羅怯諸</p>
 </blockquote>
 <p>最后解密得到</p>
-<p><img src="https://raw.githubusercontent.com/Eugenia527/Eugenia527.github.io/main/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-03-11%20162221.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Eugenia527/images/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-03-11%20162221.png"></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">FLAG: flag&#123;w0_fo_ci_Be1&#125;</span><br></pre></td></tr></table></figure>
 
 
