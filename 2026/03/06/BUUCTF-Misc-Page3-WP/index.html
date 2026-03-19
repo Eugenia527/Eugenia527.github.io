@@ -20,16 +20,21 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Muse","darkmode":true,"version":"8.27.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js" defer></script>
 
-    <meta name="description" content="1. 我吃三明治下载附件后解压缩后得到一张图片，使用winhex查看  在此处找到了一串base32编码 1MZWGCZ33GZTDCNZZG5SDIMBYGBRDEOLCGY2GIYJVHA4TONZYGA2DMM3FGMYH2">
+    <meta name="description" content="第三周持续更新 1. 我吃三明治下载附件后解压缩后得到一张图片，使用winhex查看  在此处找到了一串base32编码 1MZWGCZ33GZTDCNZZG5SDIMBYGBRDEOLCGY2GIYJVHA4TONZYGA2DMM3FGMYH2  放入cyberchef中解码  1FLAG: flag&#123;6f1797d4080b29b64da5897780463e30&#125;  2.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="BUUCTF-Misc-Page3-WP">
 <meta property="og:url" content="http://example.com/2026/03/06/BUUCTF-Misc-Page3-WP/index.html">
 <meta property="og:site_name" content="Eugenia&#39;s Blog">
-<meta property="og:description" content="1. 我吃三明治下载附件后解压缩后得到一张图片，使用winhex查看  在此处找到了一串base32编码 1MZWGCZ33GZTDCNZZG5SDIMBYGBRDEOLCGY2GIYJVHA4TONZYGA2DMM3FGMYH2">
+<meta property="og:description" content="第三周持续更新 1. 我吃三明治下载附件后解压缩后得到一张图片，使用winhex查看  在此处找到了一串base32编码 1MZWGCZ33GZTDCNZZG5SDIMBYGBRDEOLCGY2GIYJVHA4TONZYGA2DMM3FGMYH2  放入cyberchef中解码  1FLAG: flag&#123;6f1797d4080b29b64da5897780463e30&#125;  2.">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/Eugenia527/images/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-03-11%20234726.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/Eugenia527/images/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-03-12%20000250.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/Eugenia527/images/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-03-12%20000836.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/Eugenia527/images/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-03-12%20001238.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/Eugenia527/images/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-03-12%20002429.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/Eugenia527/images/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-03-12%20002823.png">
 <meta property="article:published_time" content="2026-03-05T16:00:00.000Z">
-<meta property="article:modified_time" content="2026-03-11T15:53:02.294Z">
+<meta property="article:modified_time" content="2026-03-12T11:00:55.960Z">
 <meta property="article:author" content="Eugenia">
 <meta property="article:tag" content="CTF">
 <meta property="article:tag" content="Misc">
@@ -125,7 +130,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E6%88%91%E5%90%83%E4%B8%89%E6%98%8E%E6%B2%BB"><span class="nav-number">1.</span> <span class="nav-text">1. 我吃三明治</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E6%88%91%E5%90%83%E4%B8%89%E6%98%8E%E6%B2%BB"><span class="nav-number">1.</span> <span class="nav-text">1. 我吃三明治</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-MRCTF2020-%E4%BD%A0%E8%83%BD%E7%9C%8B%E6%87%82%E9%9F%B3%E7%AC%A6%E5%90%97"><span class="nav-number">2.</span> <span class="nav-text">2. [MRCTF2020]你能看懂音符吗</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-ACTF%E6%96%B0%E7%94%9F%E8%B5%9B2020-NTFS%E6%95%B0%E6%8D%AE%E6%B5%81"><span class="nav-number">3.</span> <span class="nav-text">3. [ACTF新生赛2020]NTFS数据流</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -138,7 +143,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">4</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -147,7 +152,7 @@
         <span class="site-state-item-name">categories</span>
       </div>
       <div class="site-state-item site-state-tags">
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">tags</span>
       </div>
   </nav>
@@ -210,7 +215,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2026-03-11 23:53:02" itemprop="dateModified" datetime="2026-03-11T23:53:02+08:00">2026-03-11</time>
+      <time title="Modified: 2026-03-12 19:00:55" itemprop="dateModified" datetime="2026-03-12T19:00:55+08:00">2026-03-12</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -231,11 +236,31 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><h2 id="1-我吃三明治"><a href="#1-我吃三明治" class="headerlink" title="1. 我吃三明治"></a>1. 我吃三明治</h2><p>下载附件后解压缩后得到一张图片，使用winhex查看</p>
+    <div class="post-body" itemprop="articleBody"><p>第三周持续更新</p>
+<h2 id="1-我吃三明治"><a href="#1-我吃三明治" class="headerlink" title="1. 我吃三明治"></a>1. 我吃三明治</h2><p>下载附件后解压缩后得到一张图片，使用winhex查看</p>
 <p><img src="https://cdn.jsdelivr.net/gh/Eugenia527/images/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-03-11%20234726.png"></p>
 <p>在此处找到了一串base32编码</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">MZWGCZ33GZTDCNZZG5SDIMBYGBRDEOLCGY2GIYJVHA4TONZYGA2DMM3FGMYH2</span><br></pre></td></tr></table></figure>
 
+<p>放入cyberchef中解码</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Eugenia527/images/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-03-12%20000250.png"></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">FLAG: flag&#123;6f1797d4080b29b64da5897780463e30&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-MRCTF2020-你能看懂音符吗"><a href="#2-MRCTF2020-你能看懂音符吗" class="headerlink" title="2. [MRCTF2020]你能看懂音符吗"></a>2. [MRCTF2020]你能看懂音符吗</h2><p>下载附件解压缩后得到的文件没有显示后缀名，先拖入winhex中查看</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Eugenia527/images/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-03-12%20000836.png"></p>
+<p>由此可以看出<code>Rar</code>文件头格式有误，把<code>61 52</code>修改成<code>52 61</code>保存，并且修改文件后缀名为.rar</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Eugenia527/images/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-03-12%20001238.png"></p>
+<p>打开后是一个word文档，点进去查看只显示了第一行文字</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Eugenia527/images/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-03-12%20002429.png"></p>
+<p>这时将word文档的后缀名改为.zip即可，打开<code>document.xml</code>文件，看到了一串音符，也恰巧对应题目</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Eugenia527/images/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-03-12%20002823.png"></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">♭♯♪‖¶♬♭♭♪♭‖‖♭♭♬‖♫♪‖♩♬‖♬♬♭♭♫‖♩♫‖♬♪♭♭♭‖¶∮‖‖‖‖♩♬‖♬♪‖♩♫♭♭♭♭♭§‖♩♩♭♭♫♭♭♭‖♬♭‖¶§♭♭♯‖♫∮‖♬¶‖¶∮‖♬♫‖♫♬‖♫♫§=</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p><strong>音符加密核心原理</strong>：建立一套“密码本”，将26个英文字母、数字或常用符号与不同的音乐符号（如：全音符”♩”、升调号”♯”、降调号”♭”、八分音符”♪”等）一一对应。想加密一段文字，就把它替换成一串音乐符号；解密时，再将符号反向替换回文字</p>
+</blockquote>
+<p>由于在线解密的网站都打不开，所以这里采取Python脚本进行解密</p>
+<h2 id="3-ACTF新生赛2020-NTFS数据流"><a href="#3-ACTF新生赛2020-NTFS数据流" class="headerlink" title="3. [ACTF新生赛2020]NTFS数据流"></a>3. [ACTF新生赛2020]NTFS数据流</h2><p>下载附件解压缩后得到两个文件夹，一个是flag文件夹包含了499个txt文件，另一个<code>._flag</code>文件夹里只有一个<code>._flag</code>文件</p>
 
     </div>
 

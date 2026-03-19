@@ -20,22 +20,28 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Muse","darkmode":true,"version":"8.27.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js" defer></script>
 
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Eugenia&#39;s Blog">
-<meta property="og:url" content="http://example.com/archives/2026/index.html">
+    <meta name="description" content="取证分析算是Misc中比较火热的方向，而且一般来说题目分数占比挺大的，本篇将分享取证分析中常用的工具以及安装方法，还有一些例题的WP （一）会涉及到的工具（二）例题1.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="取证分析">
+<meta property="og:url" content="http://example.com/2026/03/16/%E5%8F%96%E8%AF%81%E5%88%86%E6%9E%90%E5%B7%A5%E5%85%B7%E5%8F%8A%E4%BE%8B%E9%A2%98WP/index.html">
 <meta property="og:site_name" content="Eugenia&#39;s Blog">
+<meta property="og:description" content="取证分析算是Misc中比较火热的方向，而且一般来说题目分数占比挺大的，本篇将分享取证分析中常用的工具以及安装方法，还有一些例题的WP （一）会涉及到的工具（二）例题1.">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2026-03-15T16:00:00.000Z">
+<meta property="article:modified_time" content="2026-03-16T12:15:36.335Z">
 <meta property="article:author" content="Eugenia">
+<meta property="article:tag" content="CTF">
+<meta property="article:tag" content="取证分析">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://example.com/archives/2026/">
+<link rel="canonical" href="http://example.com/2026/03/16/%E5%8F%96%E8%AF%81%E5%88%86%E6%9E%90%E5%B7%A5%E5%85%B7%E5%8F%8A%E4%BE%8B%E9%A2%98WP/">
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"en","comments":"","permalink":"","path":"archives/2026/index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://example.com/2026/03/16/%E5%8F%96%E8%AF%81%E5%88%86%E6%9E%90%E5%B7%A5%E5%85%B7%E5%8F%8A%E4%BE%8B%E9%A2%98WP/","path":"2026/03/16/取证分析工具及例题WP/","title":"取证分析"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Archive | Eugenia's Blog</title>
+<title>取证分析 | Eugenia's Blog</title>
   
 
 
@@ -82,7 +88,7 @@
 
     <a href="/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <h1 class="site-title">Eugenia's Blog</h1>
+      <p class="site-title">Eugenia's Blog</p>
       <i class="logo-line"></i>
     </a>
   </div>
@@ -104,7 +110,7 @@
   
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           Table of Contents
@@ -117,6 +123,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%EF%BC%88%E4%B8%80%EF%BC%89%E4%BC%9A%E6%B6%89%E5%8F%8A%E5%88%B0%E7%9A%84%E5%B7%A5%E5%85%B7"><span class="nav-number">1.</span> <span class="nav-text">（一）会涉及到的工具</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%EF%BC%88%E4%BA%8C%EF%BC%89%E4%BE%8B%E9%A2%98"><span class="nav-number">2.</span> <span class="nav-text">（二）例题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1"><span class="nav-number">2.1.</span> <span class="nav-text">1.</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -154,109 +161,101 @@
 
     </div>
 
-    <div class="main-inner archive posts-collapse">
+    <div class="main-inner post posts-expand">
 
 
   
-  
-  
-  <div class="post-block">
-    <div class="post-content">
-      <div class="collection-title">
-        <span class="collection-header">Um..! 4 posts in total. Keep on posting.</span>
-      </div>
 
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2026/03/16/%E5%8F%96%E8%AF%81%E5%88%86%E6%9E%90%E5%B7%A5%E5%85%B7%E5%8F%8A%E4%BE%8B%E9%A2%98WP/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Eugenia">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Eugenia's Blog">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="取证分析 | Eugenia's Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          取证分析
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
       
-    <div class="collection-year">
-      <span class="collection-header">2026<span class="collection-year-count">4</span></span>
+
+      <time title="Created: 2026-03-16 00:00:00 / Modified: 20:15:36" itemprop="dateCreated datePublished" datetime="2026-03-16T00:00:00+08:00">2026-03-16</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>取证分析算是Misc中比较火热的方向，而且一般来说题目分数占比挺大的，本篇将分享取证分析中常用的工具以及安装方法，还有一些例题的WP</p>
+<h2 id="（一）会涉及到的工具"><a href="#（一）会涉及到的工具" class="headerlink" title="（一）会涉及到的工具"></a>（一）会涉及到的工具</h2><h2 id="（二）例题"><a href="#（二）例题" class="headerlink" title="（二）例题"></a>（二）例题</h2><h3 id="1"><a href="#1" class="headerlink" title="1."></a>1.</h3>
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2026-03-16T00:00:00+08:00"
-              content="2026-03-16">
-          03-16
-        </time>
-      </div>
+    
+    
+    
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2026/03/16/%E5%8F%96%E8%AF%81%E5%88%86%E6%9E%90%E5%B7%A5%E5%85%B7%E5%8F%8A%E4%BE%8B%E9%A2%98WP/" itemprop="url">
-            <span itemprop="name">取证分析</span>
-          </a>
-      </div>
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/CTF/" rel="tag"># CTF</a>
+              <a href="/tags/%E5%8F%96%E8%AF%81%E5%88%86%E6%9E%90/" rel="tag"># 取证分析</a>
+          </div>
 
-      
-    </header>
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2026/03/06/BUUCTF-Misc-Page2-WP/" rel="prev" title="BUUCTF-Misc-Page2-WP">
+                  <i class="fa fa-angle-left"></i> BUUCTF-Misc-Page2-WP
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
   </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2026-03-06T00:00:00+08:00"
-              content="2026-03-06">
-          03-06
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2026/03/06/BUUCTF-Misc-Page2-WP/" itemprop="url">
-            <span itemprop="name">BUUCTF-Misc-Page2-WP</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2026-03-06T00:00:00+08:00"
-              content="2026-03-06">
-          03-06
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2026/03/06/BUUCTF-Misc-Page3-WP/" itemprop="url">
-            <span itemprop="name">BUUCTF-Misc-Page3-WP</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2026-03-03T00:00:00+08:00"
-              content="2026-03-03">
-          03-03
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2026/03/03/BUUCTF-Misc-Page1-WP/" itemprop="url">
-            <span itemprop="name">BUUCTF-Misc-Page1-WP</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
+</div>
 
 
-    </div>
-  </div>
-  
-  
-  
+
+
+
 
 </div>
   </main>
